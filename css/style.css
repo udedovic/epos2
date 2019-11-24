@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css?family=Vollkorn:400,400i,700,900,900i&display=swap');
+
+*{
+  box-sizing: border-box;
+}
+
+body, html{
+  height:100%;
+  margin:0;
+  font-size:18px;
+  font-family:"Lato", sans-serif;
+  font-weight:400;
+  line-height:1em;
+  color:rgb(0, 0, 0);
+}
+
+a{
+    text-decoration: none;
+}
+
+.navbar a{
+  display:block;
+  color:#f2f2f2;
+  text-align:center;
+  padding:14px 16px;
+  text-decoration:none;
+  font-size:17px;
+}
+
+
+.navbar{
+  background-color: rgb(43, 49, 63);
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar p{
+  margin-right: 2rem;
+  color: #fff;
+  font-family: 'Vollkorn', serif;
+  font-weight: 900;
+  font-style: italic;
+  font-size: 1rem;
+  margin-top: 1.3rem;
+}
+
+.navbar ul{
+  margin: 0;
+  list-style:none;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.navbar ul li{
+  margin-top: .3rem;
+  margin-bottom: .3rem;
+}
+
+@keyframes animacija{
+  0%{  background-color: rgb(43, 49, 63);}
+  100%{background-color:rgb(131, 128, 128);}
+}
+
+.navbar >ul> li:hover{
+  animation-name: animacija;
+  animation-duration: 2s;
+  border-radius: 15px;
+}
+
+#middle{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  background-image: url(../img/pozadina.jpg);
+  image-resolution: 100%;
+  image-orientation: center;
+  opacity: 0.90;
+}
+
+#middle .parts{
+  flex-basis: 350px;
+  margin: 1em;
+}
+
+.demo{
+  width: 100%;
+  padding: 3px;
+  border: 1px solid #ccc;
+}
+
+.plink{
+  text-align: center;
+}
+
+.plink a{
+  display: inline-block;
+  width:45%;
+}
+
+.btn{
+  line-height: 2em;
+  padding: 0.5em;
+  border:1px solid grey;
+  border-radius: 30px;
+  color:black;
+}
+
+.btn:hover{
+  background-color: rgb(1, 2, 2);
+  color:white;
+}
+
+p{
+  margin: 1em 0;
+}
+
+
+.footer{
+  background: rgb(43, 49, 63);
+  color:black;
+}
+
+.logo-text{
+  color:rgb(223, 217, 217);
+}
+
+.footer .footer-content{
+  display:flex;
+  width: 70%;
+  margin: 0 auto;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.about{
+  flex-basis: 70%;
+}
+
+.about p{
+  width: 90%;
+}
+
+.links{
+  flex-basis: 30%;
+}
+
+.footer .footer-content .footer-section a{
+  color:black;
+}
+
+.footer .footer-content .footer-section a:hover{
+color:rgb(223, 217, 217);
+}
+
+.footer .footer-content .footer-section h1{
+color:rgb(223, 217, 217);
+}
+
+.footer .footer-content .footer-section li{
+ padding: 7px;
+}
+
+
+.footer .footer-bottom{
+  background: rgb(34, 33, 33);
+  color:rgb(210, 202, 202);
+  text-align: center;
+}
+
+.footer-bottom p{
+  margin: 0;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+
+@media screen and (max-width: 980px) {
+  .links h1{
+    line-height: 2rem;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .links, .about{
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+ 
+/* SLICK */
+
+.slickitem1, .slickitem2, .slickitem3{
+  height: 600px;
+}
+
+.slickitem1{
+  background-image: url("../img/slajd1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.slickitem2{
+  background-image: url("../img/slajd2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.slickitem3{
+  background-image: url("../img/slajd3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}

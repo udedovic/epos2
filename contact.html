@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MOBSHOP Contact</title>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="navbar-nav">                    
+           <li><a href="index.html">Home</a></li>
+           <li><a href="about.html">About</a></li>
+           <li><a href="services.html">Services</a></li>
+           <li><a href="contact.html">Contact</a></li>
+       </ul>
+       <p><a href="index.html">MOBSHOP</a> </p>
+    </nav>
+
+<h1>Contact us</h1>
+<form onsubmit="return validateForm()">
+
+    <div class="wrapper">
+        <div class="contact-form">
+
+            <div class="input-fields">
+                <input type="text" id="name"class="input" placeholder="Name">
+                <input type="email" id="email" class="input" placeholder="Email"> 
+                <input type="text" id="phone" class="input" placeholder="Phone">
+                <input type="text" id="subject" class="input" placeholder="Subject">
+                <p class="gender">
+                    <input type="radio" name="gender" value="Male"> Male &nbsp;
+                    <input type="radio" name="gender" value="Female"> Female
+                </p>
+            </div>
+            <div class="msg">
+                <textarea id="message" placeholder="Message"></textarea>
+                <button class="btn" type="submit">SEND</button>
+            </div>
+        </div>
+    </div>
+</form>
+
+
+<div class="footer-bottom">
+    <p> &copy; mobshop.com | Designed by EPOS BROS</p>
+ </div>
+</div>
+
+<script src="js/contact.js"></script>
+
+</body>
+</html>

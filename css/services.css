@@ -1,0 +1,208 @@
+body, html{
+  height:100%;
+  margin:0;
+  font-size:18px;
+  font-family:"Lato", sans-serif;
+  font-weight:400;
+  line-height:1em;
+  color:rgb(0, 0, 0);
+}
+
+a{
+    text-decoration: none;
+}
+
+.navbar a{
+  display:block;
+  color:#f2f2f2;
+  text-align:center;
+  padding:14px 16px;
+  text-decoration:none;
+  font-size:17px;
+}
+
+
+.navbar{
+  background-color: rgb(43, 49, 63);
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar p{
+  margin-right: 2rem;
+  color: #fff;
+  font-family: 'Vollkorn', serif;
+  font-weight: 900;
+  font-style: italic;
+  font-size: 1rem;
+  margin-top: 1.3rem;
+}
+
+.navbar ul{
+  margin: 0;
+  list-style:none;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.navbar ul li{
+  margin-top: .3rem;
+  margin-bottom: .3rem;
+}
+
+@keyframes animacija{
+  0%{  background-color: rgb(43, 49, 63);}
+  100%{background-color:rgb(128, 115, 115);}
+}
+
+.navbar >ul> li:hover{
+  animation-name: animacija;
+  animation-duration: 2s;
+  border-radius: 15px;
+}
+
+  
+  .first_part, .second_part, .third_part{
+    position:relative;
+    opacity:0.75;
+    background-position:center;
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+  }
+  
+  .first_part{
+    background-image:url('../img/prva.jpg');
+    min-height:100%;
+  }
+  
+  .second_part{
+    background-image:url('../img/druga.jpg');
+    min-height:400px;
+  }
+  
+  .third_part{
+    background-image:url('../img/treca.jpg');
+    min-height:400px;
+  }
+  
+  .section{
+    text-align:center;
+    padding:50px 80px;
+  }
+  
+  .section-light{
+    background-color:#f4f4f4;
+    color:#666;
+  }
+  
+  .section-dark{
+    background-color:#282e34;
+    color:#ddd;
+  }
+  
+  .text{
+    position:absolute;
+    top:50%;
+    width:100%;
+    text-align:center;
+    color:#000;
+    font-size:30px;
+    letter-spacing:8px;
+    text-transform:uppercase;
+  }
+  
+  .text .border{
+    background-color:rgb(76, 119, 155);
+    color:#fff;
+    padding:20px;
+    border-radius: 15px;    
+
+  }
+  
+  .text .border.trans{
+    background-color:transparent;
+    color:black;
+  }
+  
+  @media(max-width:568px){
+    .first_part, .second_part, .third_part{
+      background-attachment:scroll;
+    }
+  }
+
+
+  .footer{
+    background: rgb(43, 49, 63);
+    color:black;
+  }
+  
+  .logo-text{
+    color:rgb(223, 217, 217);
+  }
+  
+  .footer .footer-content{
+    display:flex;
+    width: 70%;
+    margin: 0 auto;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+  }
+  
+  .about{
+    flex-basis: 70%;
+  }
+  
+  .about p{
+    width: 90%;
+  }
+  
+  .links{
+    flex-basis: 30%;
+  }
+  
+  .footer .footer-content .footer-section a{
+    color:black;
+  }
+  
+  .footer .footer-content .footer-section a:hover{
+  color:rgb(223, 217, 217);
+  }
+  
+  .footer .footer-content .footer-section h1{
+  color:rgb(223, 217, 217);
+  }
+  
+  .footer .footer-content .footer-section li{
+   padding: 7px;
+  }
+  
+  
+  .footer .footer-bottom{
+    background: rgb(34, 33, 33);
+    color:rgb(210, 202, 202);
+    text-align: center;
+  }
+  
+  .footer-bottom p{
+    margin: 0;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+  
+  
+  @media screen and (max-width: 980px) {
+    .links h1{
+      line-height: 2rem;
+    }
+  }
+  
+  @media screen and (max-width: 660px) {
+    .links, .about{
+      margin: 0 auto;
+      text-align: center;
+    }
+  }
+  

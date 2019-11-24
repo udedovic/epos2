@@ -1,0 +1,190 @@
+*{
+    box-sizing: border-box;
+    outline: none;
+  }
+
+body, html{
+    height:100%;
+    margin:0;
+    font-size:16px;
+    font-family:"Lato", sans-serif;
+    font-weight:400;
+    line-height:1em;
+    color:rgb(0, 0, 0);
+  }
+    
+  body{
+    background: url('../img/cetvrta.jpg') repeat top center;
+    background-size: cover;
+    height: 100vh;
+  }
+
+  h1{
+      margin-top:50px;
+      text-align: center;
+      font-size: 35px;
+      color:#fff;
+  }
+   
+  .wrapper{
+    padding: 0 20px;
+  }
+   
+  .contact-form{
+    display: flex;
+    max-width: 80%;
+    margin: 0 auto;
+    background: rgba(0,0,0,0.8);
+    padding: 3rem 2rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  }
+   
+  .input-fields{
+    display: flex;
+    flex-direction: column;
+    margin-right: 4%;
+    font-size: 20px;
+  }
+   
+  .input-fields, .msg{
+    width: 48%;
+  }
+   
+  .input-fields .input, 
+  .msg textarea{
+    margin: 10px 0;
+    background: transparent;
+    border: 0px;
+    border-bottom: 2px solid #c5ecfd;
+    padding: 10px;
+    color: #c5ecfd;
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  p.gender{
+    color: #c5ecfd;
+  }
+   
+  .msg textarea{
+    height: 212px;
+  }
+   
+  ::-webkit-input-placeholder {
+    color: #c5ecfd;
+    font-size: 1rem;
+  }
+   
+  .btn {
+      background-color: rgb(43, 49, 63);
+      text-align: center;
+      padding: 15px;
+      border-radius: 25px;
+      color: #fff;
+      cursor: pointer;
+      width: 70%;
+      margin: 0 auto;
+      display: block;
+      font-size: 20px;
+  }
+
+  .btn:hover{
+    background-color:rgb(11, 103, 146);
+  }
+   
+  @media screen and (max-width: 600px){
+    .contact-form{
+      flex-direction: column;
+    }
+    .msg textarea{
+      height: 80px;
+    }
+    .input-fields,
+    .msg{
+      width: 100%;
+    }
+
+    .footer-bottom{
+      position: static !important;
+    }
+  }
+
+  body, html{
+    height:100%;
+    margin:0;
+    font-size:18px;
+    font-family:"Lato", sans-serif;
+    font-weight:400;
+    line-height:1em;
+    color:rgb(0, 0, 0);
+  }
+  
+  a{
+      text-decoration: none;
+  }
+  
+  .navbar a{
+    display:block;
+    color:#f2f2f2;
+    text-align:center;
+    padding:14px 16px;
+    text-decoration:none;
+    font-size:17px;
+  }
+  
+  
+  .navbar{
+    background-color: rgb(43, 49, 63);
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .navbar p{
+    margin-right: 2rem;
+    color: #fff;
+    font-family: 'Vollkorn', serif;
+    font-weight: 900;
+    font-style: italic;
+    font-size: 1rem;
+    margin-top: 1.3rem;
+  }
+  
+  .navbar ul{
+    margin: 0;
+    list-style:none;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .navbar ul li{
+    margin-top: .3rem;
+    margin-bottom: .3rem;
+  }
+  
+  @keyframes animacija{
+    0%{  background-color: rgb(43, 49, 63);}
+    100%{background-color:rgb(128, 115, 115);}
+  }
+  
+  .navbar >ul> li:hover{
+    animation-name: animacija;
+    animation-duration: 2s;
+    border-radius: 15px;
+  }
+
+  .footer-bottom{
+    background: rgb(34, 33, 33);
+    color:rgb(210, 202, 202);
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .footer-bottom p{
+    margin: 0;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
